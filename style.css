@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700;800&family=Space+Mono:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.content {
+  padding: 40px 77px 24px;
+}
+
+.header-text {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-weight: 800;
+  color: #333;
+  letter-spacing: -2px;
+}
+
+.error {
+  margin-top: 200px;
+  display: flex;
+}
+
+.error-image {
+  flex: 1;
+  /* width: auto;
+  height: auto; */
+}
+
+.error-img {
+  width: 100%;
+}
+
+.error-news {
+  width: 100%;
+  flex: 1;
+  margin-left: 118px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-tittle {
+  font-size: 64px;
+  color: #333;
+  /* line-height: 95px; */
+  min-width: 590px;
+  letter-spacing: -3px;
+}
+
+.error-descr {
+  font-size: 24px;
+  font-weight: 400;
+  color: #4f4f4f;
+  max-width: 385px;
+  margin-top: 36px;
+}
+
+.error-btn {
+  margin-top: 64px;
+}
+
+.error-link {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  padding: 24px 43px;
+  background-color: #333;
+}
+
+.error-link:hover {
+  background-color: #222;
+}
+
+.end {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 24px;
+}
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b9bdcf;
+  text-align: center;
+}
+
+.username {
+  color: #b9bdcf;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding: 20px 24px;
+  }
+
+  .error {
+    flex-direction: column;
+    margin-top: 64px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .error-news {
+    margin: 0;
+    max-width: 736px;
+    align-items: flex-start;
+  }
+
+  .error-image {
+    padding: 0 24px;
+  }
+
+  .error-tittle {
+    width: 100%;
+    font-size: 48px;
+    min-width: unset;
+  }
+
+  .error-descr {
+    font-size: 18px;
+  }
+}
